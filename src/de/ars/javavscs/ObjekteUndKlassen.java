@@ -38,7 +38,6 @@ public class ObjekteUndKlassen {
     public static void main(String[] args) {
 
         ObjekteUndKlassen o = new ObjekteUndKlassen();
-        o.titel = 3;
         o.setTitel(3);
 
     }
