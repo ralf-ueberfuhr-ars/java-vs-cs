@@ -17,7 +17,7 @@ public class Allgemeines {
      * @return unveränderliche Liste
      */
     private List<String> findText() {
-        findText(4);
+        return findText(4);
     }
 
     private List<String> findText(int y) {
@@ -57,10 +57,10 @@ public class Allgemeines {
         // Wrapperklassen
         Integer ii = 3 ; // ii.intValue()
         Double d = null;
-        Character c;
-        List<Integer> l = new LinkedList<>(); // notwendig
-        l.add(Integer.valueOf(i));  // ausführliche Schreibweise
-        l.add(i); // Autoboxing
+        Character character;
+        List<Integer> list = new LinkedList<>(); // notwendig
+        list.add(Integer.valueOf(i));  // ausführliche Schreibweise
+        list.add(i); // Autoboxing
         i = ii; // Autounboxing (i = ii.intValue()), evtl. NPE!
 
         boolean initialized2; // Standard, denn kann nicht null sein,
@@ -69,7 +69,8 @@ public class Allgemeines {
         // Type Inference ab Java 9
         var s = "";
 
-        String text = String.format("Das sind %d %s", 3, "Beispiele");
+        // String Interpolation, keine Variable Interpolation
+        String myText = String.format("Das sind %d %s", 3, "Beispiele");
 
     }
 
