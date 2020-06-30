@@ -1,3 +1,9 @@
+# IDE
+.*
+!.gitignore
+# Java
+*.class
+# Maven
 target/
 pom.xml.tag
 pom.xml.releaseBackup
