@@ -3,6 +3,7 @@
 !.gitignore
 # Java
 *.class
+bin
 # Maven
 target/
 pom.xml.tag
