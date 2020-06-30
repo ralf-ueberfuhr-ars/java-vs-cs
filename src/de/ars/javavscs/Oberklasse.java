@@ -1,6 +1,6 @@
 package de.ars.javavscs;
 
-public class Oberklasse { // final = keine Unterklassen
+public abstract class Oberklasse { // final = keine Unterklassen, final+abstract geht nicht
 
     String titel;
     int counter = 5;

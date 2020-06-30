@@ -1,6 +1,13 @@
 package de.ars.javavscs;
 
+import java.util.Map;
+
 public class ObjekteUndKlassen {
+
+    // fq-Name: de.ars.javavscs.ObjekteUndKlassen.InnereKlasse
+    public static class InnereKlasse {
+
+    }
 
     // Sichtbarkeitsbereiche:
     //  -> Standard = package-protected

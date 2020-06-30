@@ -1,8 +1,7 @@
 package de.ars.javavscs;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -12,6 +11,7 @@ public class Unterklasse extends Oberklasse { // Einfachvererbung
 
     int anzahl;
 
+    @Deprecated(since = "1.5")
     public Unterklasse() {
         // wenn nichts steht -> implizit super();
         //super("titel", 10); // Konstruktor der Oberklasse
@@ -48,6 +48,12 @@ public class Unterklasse extends Oberklasse { // Einfachvererbung
                 f.add(new JTextField()); // Closure
                 Unterklasse.this.anzahl = 3;
                 anzahl = Math.abs(-4);
+            }
+        });
+        b.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                // hier Logik
             }
         });
 

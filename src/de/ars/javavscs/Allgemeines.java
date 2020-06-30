@@ -1,9 +1,7 @@
 package de.ars.javavscs;
 
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Optional;
+import java.time.LocalDate;
+import java.util.*;
 
 public class Allgemeines {
 
@@ -117,6 +115,13 @@ public class Allgemeines {
 
         // mit Optional
         findList().ifPresent(l -> l.add(""));
+
+        // Datum
+        Date d = new Date(); // seit Java 1.0
+        //@SuppressWarnings("deprecated")
+        d= new Date(2020, 2, 15);
+        // seit Java 8
+        LocalDate d2 = LocalDate.now();
 
     }
 
